@@ -1,43 +1,232 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+*,::before,::after {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	box-sizing:border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
 body {
-	line-height: 1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
 }
-ol, ul {
+
+h1, h2, h3 {
+    color: #333333;
+}
+
+.container {
+	background: radial-gradient(at 150% 150%,  #f5d8ed 10%, white);
+	padding: 100px 100px 100px 100px;
+	text-align: center;
+}
+
+.container h2 {
+	color: #2f2f2f;
+	font-size: 40px;
+	text-shadow: 1px 1px 1px#2f2f2f;
+}
+
+.card {
+	background: radial-gradient(ellipse closest-side,  white 40%, #f6eaf3);
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px 10px white;
+	padding: 25px;
+	margin: 60px;
+	text-align: left;
+}  
+
+.card h3 {
+	font-size: 25px;
+	font-weight: bolder;
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+
+.card p {
+    font-size: 18px;
+	margin-bottom: 20px;
+}
+
+p {
+	line-height: 35px;
+}
+
+header {
+	background: linear-gradient(#818CF8, 60%, white);
+	box-shadow: 8px 8px 20px white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 130px;
+	padding-right: 130px;
+	position: sticky;
+    top: 0;
+    max-width: 100vw;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+	gap: 20px;
+    margin: 0;
+    display: flex;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+	text-decoration: none;
+}
+
+.dayInfo {
+	background: radial-gradient(ellipse closest-side,  white 40%, #f6eaf3);
+	box-shadow: 40px 40px 40px white;
+	border-radius: 25px;
+	padding: 30px;
+	margin-top: 100px;
+	float: left;
+	width: 300px;
+	justify-content: center;
+} 
+
+.runa pre {
+	font-size: 7px;
+}
+
+.runa h2 {
+	margin-top: 40px;
+}
+
+aside {
+	text-align: center;
+}
+
+aside p {
+	line-height: 25px;
+	font-size: 18px;
+}
+
+aside h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px;
+	float: center;
+}
+
+.about {
+	background: radial-gradient(at 150% 150%,  #f5d8ed 10%, white);
+	padding: 200px 100px 100px 400px;
+	text-align: center;
+}
+
+.about h2 {
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+.about p {
+	line-height: 40px;
+	font-size: 23px;
+}
+
+.ifYou {
+	background: radial-gradient(at 150% -50%,   #f5d8ed 10%, white);
+	padding: 150px 100px 100px 400px;
+	text-align: center;
+}
+
+.ifYou h2 {
+	font-size: 40px;
+	margin-bottom: 40px;
+}
+
+.ifYou p {
+	line-height: 40px;
+	font-size: 23px;
+}
+
+.ifYou ul{
+	list-style-image: url(images/4wed_heart.svg);
+	text-align: left;
+	justify-content: left;
+	padding-left: 50px;
+	margin-bottom: 50px;
+}
+
+.ifYou li::marker {
+	font-size: 60px;
+}
+
+.ifYou li {
+	padding-inline-start: 30px;
+	font-style: oblique;
+	font-size: 23px;
+}
+
+embed {
+	width: 50px ;
+	height: 100px;
+    margin-bottom: 10px;
+}
+
+.quote {
+	background: url(images/sunset-blue-pink-and-orange-sky_590597-370.avif);
+	background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+	background-attachment: fixed;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, cursive;
+	box-shadow: inset 0  100px 100px -100px rgb(141, 138, 138),  inset 0  -100px 100px -100px rgb(141, 138, 138);
+	text-align: center;
+	padding: 100px 50px 100px 50px;
+}
+
+blockquote p {
+	font-size: 50px;
+	line-height: 100px;
+	text-align: left;
+	text-indent: 100px;
+	font-weight: bolder;
+	text-shadow: 15px 15px 15px rgb(136, 134, 134);
+	color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+}
+
+blockquote footer {
+	background-color: transparent;
+    margin-top: 40px;
+	text-align: right;
+}
+
+blockquote footer cite {
+	color: rgba(252, 251, 251, 0.9);
+    font-style: italic;
+	text-shadow: 10px 10px 10px rgb(136, 134, 134);
+	font-weight: bolder;
+    font-size: 30px;
+}
+
+footer {
+	margin: 30px;
+	margin-left: 70px;
+	text-align: left;
+    background-color: #f2f2f2;
+}
+
+footer ul {
 	list-style: none;
+	padding-left: 0;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+footer p {
+	font-style: italic;
 }
