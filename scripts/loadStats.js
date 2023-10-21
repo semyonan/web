@@ -1,7 +1,8 @@
 
-(function() {
+(() => {
     function calculateLoadTime() {
-      const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+        const pageEnd = performance.mark('pageEnd')
+        const loadTime = pageEnd.startTime
       return loadTime;
     }
   
