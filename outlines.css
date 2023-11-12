@@ -294,6 +294,81 @@ footer p {
 	font-style: italic;
 }
 
+.tableConstructor {
+	display: relative;
+	background: radial-gradient(at 150% 150%,  #f5d8ed 10%, white);
+	padding: 150px 100px 100px 100px;
+	text-align: center;
+}
+
+.tableConstructor h2 {
+	color: #2f2f2f;
+	text-shadow: 1px 1px 1px#2f2f2f;
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+form {
+	color: #2f2f2f;
+    margin-bottom: 20px;
+	text-align: left;
+}
+
+label {
+	color: #2f2f2f;
+	font-size: 25px;
+	font-family: Arial, sans-serif;
+    display: block;
+	text-align: left;
+    margin-bottom: 20px;
+	font-weight: bold;
+}
+
+select {
+	color: #2f2f2f;
+	text-align: left;
+	width: 100%;
+	background: radial-gradient(ellipse closest-side,  white 40%, #f6eaf3);
+	font-size: 25px;
+	margin-bottom: 20px;
+	border: none;
+}
+
+input[type="number"] {
+	color: #2f2f2f;
+    width: 100%;
+	height: 30px;
+	background: radial-gradient(ellipse closest-side,  white 40%, #f6eaf3);
+	border-radius: 20px;
+	border: none;
+	box-shadow: 10px 10px 10px 10px white;
+	font-size: 20px;
+	margin-bottom: 40px;
+	padding-left: 10px;
+}
+
+input[type="submit"] {
+	color: #2f2f2f;
+	height: 50px;
+	font-family: Arial, sans-serif;
+	font-size: 25px;
+    width: 250px;
+	font-weight: bold;
+	border: none;
+	background: radial-gradient(ellipse closest-side,  white 40%, #f6eaf3);
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px 10px white;
+	margin-bottom: 40px;
+}
+
+#tableContainer {
+    display: grid;
+}
+
+
 @media screen and (max-width: 600px)  {
 	.dayInfo {
 	  display: none;
