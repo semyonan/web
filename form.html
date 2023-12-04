@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="outlines.css" rel="stylesheet">
+    <meta name="keywords" content="Таро, астрология, чакры, вселенная">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/loadStats.js"></script>
+    <title>Гадалка.ру</title>
+</head>
+<body>
+    <header>
+        <h1>Гадалка.ру</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">О нас</a></li>
+                <li><a href="serives.html">Предоставляемые услуги</a></li>
+                <li><a href="feedback.html">Отзывы</a></li>
+                <li><a href="form.html">Форма</a></li>
+            </ul>
+            <script src="scripts/header-active.js"></script>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tableConstructor" id="section4">
+            <h2>Конструктор таблицы</h2>
+            <form id="tableForm">
+                <label for="service">Услуга</label>
+                <select id="service" name="service">
+                    <option value="Расклад на 3 карты Таро">Расклад на 3 карты Таро</option>
+                    <option value="Разбор натальной карты">Разбор натальной карты</option>
+                    <option value="Совместимость по дате рождения">Совместимость по дате рождения</option>
+                    <option value="Раскрытие сексуальной чакры">Раскрытие сексуальной чакры</option>
+                </select>
+                <br>
+                <label for="dayOfWeek">День недели</label>
+                <select id="dayOfWeek" name="dayOfWeek">
+                    <option value="Пн">Пн</option>
+                    <option value="Вт">Вт</option>
+                    <option value="Ср">Ср</option>
+                    <option value="Чт">Чт</option>
+                    <option value="Пт">Пт</option>
+                    <option value="Сб">Сб</option>
+                    <option value="Вс">Вс</option>
+                </select>
+                <br>
+                <label for="time">Время(ч)</label>
+                <input type="number" id="time" name="time" min="0" max="23">
+                <br>
+                <input type="submit" value="Создать таблицу">
+            </form>
+            <div id="tableContainer"></div>
+        </section>
+    </main>
+    <script src="scripts/form.js"></script>
+
+    <footer>
+        <h4>Контактная информация:</h4>
+        <ul>
+        <li>8-888-888-88-88</li>
+        <li>&lt;astro@mail.ru&gt;</li>
+        </ul> 
+        <p>H<sub>2</sub>O-просто добавь воды</p> 
+    </footer>
+</body>
+</html>
