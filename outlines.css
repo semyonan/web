@@ -44,6 +44,11 @@ h1, h2, h3 {
     color: #333333;
 }
 
+.swiper-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
 .container {
 	background: radial-gradient(at 150% 150%,  #f5d8ed 10%, white);
 	padding: 100px 100px 100px 100px;
@@ -378,8 +383,6 @@ input[type="submit"] {
 	height: 120px;
 	animation: spin 2s linear infinite;
   }
-  
-
 .aside-preloader {
 	position: fixed;
 	padding: 30px;
